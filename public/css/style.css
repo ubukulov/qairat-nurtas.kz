@@ -3,10 +3,12 @@ body {
   padding: 0px;
   margin: 0px;
   overflow-x: hidden;
+  background: #D1C6C2;
 }
 #wrap {
   width: 1000px;
   margin: 0 auto;
+  background: #fff;
 }
 #header .header {
   background: url("../img/header_bg.jpg") center center no-repeat;
@@ -22,6 +24,7 @@ body {
 }
 .news_q {
   width: 100%;
+  margin-bottom: 20px;
 }
 .news_q .news_im {
   width: 300px;
@@ -37,6 +40,20 @@ body {
 .news_q .news_item .news_inform {
   font-size: 12px;
   color: #424242;
+}
+.post_content .post_title {
+  margin-bottom: 20px;
+}
+.post_content .post_im {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.post_content .post_im img {
+  text-align: left;
+}
+.post_content .post_desc {
+  text-align: justify;
 }
 .footer {
   padding: 40px 0px;

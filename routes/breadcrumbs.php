@@ -21,11 +21,12 @@ Breadcrumbs::register('homepage', function ($breadcrumbs) {
 //    $breadcrumbs->push($category->title, route('catalog.view', ['alias' => $category->alias]));
 //});
 
-//// Product
-//Breadcrumbs::register('product.index', function ($breadcrumbs, $product) {
+// Post
+Breadcrumbs::register('post.show', function ($breadcrumbs, $page = null) {
 //    $breadcrumbs->parent('catalog.view', $product->category);
-//    $breadcrumbs->push($product->title);
-//});
+    $breadcrumbs->parent('homepage');
+    $breadcrumbs->push($page->title);
+});
 
 //// Login form
 //Breadcrumbs::register('login', function($breadcrumbs) {

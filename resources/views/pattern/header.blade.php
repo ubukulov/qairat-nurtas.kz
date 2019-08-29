@@ -11,16 +11,16 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="{{ route('home') }}">Главная <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Песни</a>
+                <a class="nav-link" href="{{ route('page.show', ['alias' => 'test']) }}">Песни</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Клипы</a>
+                <a class="nav-link" href="{{ route('page.show', ['alias' => 'test']) }}">Клипы</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Биография</a>
+                <a class="nav-link" href="{{ route('page.show', ['alias' => 'biografiya-kayrata-nurtasa']) }}">Биография</a>
             </li>
 
         </ul>

@@ -13,6 +13,9 @@
 </head>
 <body>
 <div id="wrap">
+    <div id="top-adv">
+        <img src="{{ asset('img/adv1000x80.jpg') }}" alt="">
+    </div>
     <div id="header">
         @include('pattern.header')
     </div>
@@ -39,6 +42,12 @@
                                     <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
                                 </ul>
                             </div>
+                        </div>
+                    </div>
+
+                    <div class="right_adv_block">
+                        <div class="r_adv_block">
+                            <img src="{{ asset('img/adv200x500.jpg') }}" alt="">
                         </div>
                     </div>
                 </div>
