@@ -2,12 +2,17 @@
 
 namespace App\Http\Controllers;
 
+use App\Post;
 use Illuminate\Http\Request;
 
 class PostController extends BaseController
 {
-    public function show($alias)
+    public function show($alias, $id)
     {
-        return view('post.show');
+        $post = Post::findOrFail($id);
+        $post->views++;
+        $post->save();
+        $title = $this->title .= $post->title;
+        return view('post.show', compact('post', 'title'));
     }
 }

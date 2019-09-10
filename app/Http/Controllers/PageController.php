@@ -13,11 +13,12 @@ class PageController extends BaseController
         //if ($page) {
             switch ($alias) {
                 case "qairat-nurtas-musics":
-                    return view('page.musics');
+                    return view('page.musics', ['title' => 'Кайрат Нуртас | Музыки']);
                     break;
 
                 default:
-                    return view('page.show', compact('page'));
+                    $title = 'Кайрат Нуртас | Биография';
+                    return view('page.show', compact('page', 'title'));
                     break;
             }
 //        }

@@ -22,10 +22,19 @@ Breadcrumbs::register('homepage', function ($breadcrumbs) {
 //});
 
 // Post
-Breadcrumbs::register('post.show', function ($breadcrumbs, $page = null) {
-//    $breadcrumbs->parent('catalog.view', $product->category);
+Breadcrumbs::register('post.show', function ($breadcrumbs, $post = null) {
     $breadcrumbs->parent('homepage');
-    $breadcrumbs->push($page->title);
+    $breadcrumbs->push($post->title);
+});
+
+// Page
+Breadcrumbs::register('page.show', function ($breadcrumbs, $page = null) {
+    $breadcrumbs->parent('homepage');
+    if ($page == null) {
+        $breadcrumbs->push('Музыки');
+    } else {
+        $breadcrumbs->push($page->title);
+    }
 });
 
 //// Login form

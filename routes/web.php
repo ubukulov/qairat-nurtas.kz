@@ -12,5 +12,5 @@
 */
 
 Route::get('/', 'IndexController@welcome')->name('home');
-Route::get('/post/{alias}', 'PostController@show')->name('post.show');
+Route::get('/post/{alias}/{id}', 'PostController@show')->name('post.show');
 Route::get('/page/{alias}', 'PageController@show')->name('page.show');

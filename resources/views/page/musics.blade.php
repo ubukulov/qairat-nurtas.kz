@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-{{--    {!! Breadcrumbs::render('post.show', $page) !!}--}}
+    {!! Breadcrumbs::render('page.show') !!}
     <div class="row">
         <div class="col-md-12">
             <div class="page_content">
@@ -86,7 +86,7 @@
                                         <span class="song-title">Мендей ким</span>
                                         <span class="song-artist">Кайрат Нуртас</span>
                                     </div>
-                                    <a href="https://switchstancerecordings.bandcamp.com/track/risin-high-feat-raashan-ahmad" class="bandcamp-link" target="_blank">
+                                    <a href="{{ asset('songs/kairat_nurtas_-_mendei_kim.mp3') }}" class="bandcamp-link" title="Скачать" target="_blank">
                                         <img class="bandcamp-grey" src="/img/bandcamp-grey.svg"/>
                                         <img class="bandcamp-white" src="/img/bandcamp-white.svg"/>
                                     </a>
@@ -104,7 +104,7 @@
                                         <span class="song-title">Ансарым</span>
                                         <span class="song-artist">Кайрат Нуртас</span>
                                     </div>
-                                    <a href="https://lorn.bandcamp.com/" class="bandcamp-link" target="_blank">
+                                    <a href="{{ asset('songs/kairat_nurtas_-_ansarym.mp3') }}" class="bandcamp-link" title="Скачать" target="_blank">
                                         <img class="bandcamp-grey" src="/img/bandcamp-grey.svg"/>
                                         <img class="bandcamp-white" src="/img/bandcamp-white.svg"/>
                                     </a>
@@ -121,7 +121,7 @@
                                         <span class="song-title">Ешкимке сенбе</span>
                                         <span class="song-artist">Кайрат Нуртас</span>
                                     </div>
-                                    <a href="https://lorn.bandcamp.com/" class="bandcamp-link" target="_blank">
+                                    <a href="{{ asset('songs/kairat_nurtas_-_eshkimge_senbe.mp3') }}" class="bandcamp-link" title="Скачать" target="_blank">
                                         <img class="bandcamp-grey" src="/img/bandcamp-grey.svg"/>
                                         <img class="bandcamp-white" src="/img/bandcamp-white.svg"/>
                                     </a>
@@ -138,7 +138,7 @@
                                         <span class="song-title">Жолыкпадын ертерек</span>
                                         <span class="song-artist">Кайрат Нуртас</span>
                                     </div>
-                                    <a href="https://switchstancerecordings.bandcamp.com/track/i-came-running" class="bandcamp-link" target="_blank">
+                                    <a href="{{ asset('songs/kairat_nurtas_-_zholykpadyn_erterek.mp3') }}" class="bandcamp-link" title="Скачать" target="_blank">
                                         <img class="bandcamp-grey" src="/img/bandcamp-grey.svg"/>
                                         <img class="bandcamp-white" src="/img/bandcamp-white.svg"/>
                                     </a>
@@ -155,7 +155,7 @@
                                         <span class="song-title">Отаным-Казак ели</span>
                                         <span class="song-artist">Кайрат Нуртас</span>
                                     </div>
-                                    <a href="https://emancipator.bandcamp.com" class="bandcamp-link" target="_blank">
+                                    <a href="{{ asset('songs/kairat_nurtas-otanym-aza-el-2019.mp3') }}" class="bandcamp-link" title="Скачать" target="_blank">
                                         <img class="bandcamp-grey" src="/img/bandcamp-grey.svg"/>
                                         <img class="bandcamp-white" src="/img/bandcamp-white.svg"/>
                                     </a>
@@ -172,7 +172,7 @@
                                         <span class="song-title">Унап барасын</span>
                                         <span class="song-artist">Кайрат Нуртас</span>
                                     </div>
-                                    <a href="https://pglost.bandcamp.com/track/terrain" class="bandcamp-link" target="_blank">
+                                    <a href="{{ asset('songs/kairat-nurtas-unap-barasy-2019.mp3') }}" class="bandcamp-link" title="Скачать" target="_blank">
                                         <img class="bandcamp-grey" src="/img/bandcamp-grey.svg"/>
                                         <img class="bandcamp-white" src="/img/bandcamp-white.svg"/>
                                     </a>
@@ -189,7 +189,7 @@
                                         <span class="song-title">Сонгысы жур улылардын</span>
                                         <span class="song-artist">Кайрат Нуртас</span>
                                     </div>
-                                    <a href="https://russiancircles.bandcamp.com/track/vorel" class="bandcamp-link" target="_blank">
+                                    <a href="{{ asset('songs/kairat-nurtas-soysy-zhr-lylardy-2019.mp3') }}" class="bandcamp-link" title="Скачать" target="_blank">
                                         <img class="bandcamp-grey" src="/img/bandcamp-grey.svg"/>
                                         <img class="bandcamp-white" src="/img/bandcamp-white.svg"/>
                                     </a>
@@ -206,7 +206,7 @@
                                         <span class="song-title">Бакытты жандармыз</span>
                                         <span class="song-artist">Кайрат Нуртас & Айдана Меденова</span>
                                     </div>
-                                    <a href="http://jimkata.bandcamp.com/track/intro-sweet-glory" class="bandcamp-link" target="_blank">
+                                    <a href="{{ asset('songs/kairat-nurtas-aydana-medenova-baytty-zhandarmyz-2019.mp3') }}" class="bandcamp-link" title="Скачать" target="_blank">
                                         <img class="bandcamp-grey" src="/img/bandcamp-grey.svg"/>
                                         <img class="bandcamp-white" src="/img/bandcamp-white.svg"/>
                                     </a>
@@ -223,7 +223,7 @@
                                         <span class="song-title">Журегим сен келгели бакытты</span>
                                         <span class="song-artist">Кайрат Нуртас</span>
                                     </div>
-                                    <a href="https://littlepeople.bandcamp.com/track/offcut-6" class="bandcamp-link" target="_blank">
+                                    <a href="{{ asset('songs/kairat-nurtas-zhregm-sen-kelgel-baytty-2017.mp3') }}" class="bandcamp-link" title="Скачать" target="_blank">
                                         <img class="bandcamp-grey" src="/img/bandcamp-grey.svg"/>
                                         <img class="bandcamp-white" src="/img/bandcamp-white.svg"/>
                                     </a>
@@ -240,7 +240,7 @@
                                         <span class="song-title">Журегиннен бир орын бер бос болса</span>
                                         <span class="song-artist">Кайрат Нуртас</span>
                                     </div>
-                                    <a href="https://emancipator.bandcamp.com/track/dusk-to-dawn-2" class="bandcamp-link" target="_blank">
+                                    <a href="{{ asset('songs/kairat-nurtas-zhregnen-br-oryn-ber-bos-bolsa-2017.mp3') }}" class="bandcamp-link" title="Скачать" target="_blank">
                                         <img class="bandcamp-grey" src="/img/bandcamp-grey.svg"/>
                                         <img class="bandcamp-white" src="/img/bandcamp-white.svg"/>
                                     </a>
@@ -257,7 +257,7 @@
                                         <span class="song-title">Багдаршам</span>
                                         <span class="song-artist">Кайрат Нуртас</span>
                                     </div>
-                                    <a href="https://emancipator.bandcamp.com/track/anthem" class="bandcamp-link" target="_blank">
+                                    <a href="{{ asset('songs/kayrat-nrtas-badarsham-2017.mp3') }}" class="bandcamp-link" title="Скачать" target="_blank">
                                         <img class="bandcamp-grey" src="/img/bandcamp-grey.svg"/>
                                         <img class="bandcamp-white" src="/img/bandcamp-white.svg"/>
                                     </a>
@@ -274,7 +274,7 @@
                                         <span class="song-title">Уакыт</span>
                                         <span class="song-artist">Кайрат Нуртас</span>
                                     </div>
-                                    <a href="https://emancipator.bandcamp.com/track/anthem" class="bandcamp-link" target="_blank">
+                                    <a href="{{ asset('songs/kayrat-nrtas-uayt-2017.mp3') }}" class="bandcamp-link" title="Скачать" target="_blank">
                                         <img class="bandcamp-grey" src="/img/bandcamp-grey.svg"/>
                                         <img class="bandcamp-white" src="/img/bandcamp-white.svg"/>
                                     </a>
@@ -291,7 +291,7 @@
                                         <span class="song-title">Мени багала</span>
                                         <span class="song-artist">Кайрат Нуртас</span>
                                     </div>
-                                    <a href="https://emancipator.bandcamp.com/track/anthem" class="bandcamp-link" target="_blank">
+                                    <a href="{{ asset('songs/kayrat-nrtas-men-baala-2017.mp3') }}" class="bandcamp-link" title="Скачать" target="_blank">
                                         <img class="bandcamp-grey" src="/img/bandcamp-grey.svg"/>
                                         <img class="bandcamp-white" src="/img/bandcamp-white.svg"/>
                                     </a>
@@ -308,7 +308,7 @@
                                         <span class="song-title">Мени умыт</span>
                                         <span class="song-artist">Кайрат Нуртас</span>
                                     </div>
-                                    <a href="https://emancipator.bandcamp.com/track/anthem" class="bandcamp-link" target="_blank">
+                                    <a href="{{ asset('songs/kayrat-nrtas-men-myt-2018.mp3') }}" class="bandcamp-link" title="Скачать" target="_blank">
                                         <img class="bandcamp-grey" src="/img/bandcamp-grey.svg"/>
                                         <img class="bandcamp-white" src="/img/bandcamp-white.svg"/>
                                     </a>
@@ -325,7 +325,7 @@
                                         <span class="song-title">Суйши мени</span>
                                         <span class="song-artist">Кайрат Нуртас</span>
                                     </div>
-                                    <a href="https://emancipator.bandcamp.com/track/anthem" class="bandcamp-link" target="_blank">
+                                    <a href="{{ asset('songs/kayrat-nrtas-sysh-men-zhaa-nsa-2016.mp3') }}" class="bandcamp-link" title="Скачать" target="_blank">
                                         <img class="bandcamp-grey" src="/img/bandcamp-grey.svg"/>
                                         <img class="bandcamp-white" src="/img/bandcamp-white.svg"/>
                                     </a>
@@ -342,7 +342,7 @@
                                         <span class="song-title">Мени тусинбей журсин</span>
                                         <span class="song-artist">Кайрат Нуртас</span>
                                     </div>
-                                    <a href="https://emancipator.bandcamp.com/track/anthem" class="bandcamp-link" target="_blank">
+                                    <a href="{{ asset('songs/kayrat-nrtas-men-tsnbey-zhrs-2016.mp3') }}" class="bandcamp-link" title="Скачать" target="_blank">
                                         <img class="bandcamp-grey" src="/img/bandcamp-grey.svg"/>
                                         <img class="bandcamp-white" src="/img/bandcamp-white.svg"/>
                                     </a>
@@ -359,7 +359,7 @@
                                         <span class="song-title">Аушыма тиме</span>
                                         <span class="song-artist">Кайрат Нуртас</span>
                                     </div>
-                                    <a href="https://emancipator.bandcamp.com/track/anthem" class="bandcamp-link" target="_blank">
+                                    <a href="{{ asset('songs/kairat_nurtas_-_ashuyma_time202.mp3') }}" class="bandcamp-link" title="Скачать" target="_blank">
                                         <img class="bandcamp-grey" src="/img/bandcamp-grey.svg"/>
                                         <img class="bandcamp-white" src="/img/bandcamp-white.svg"/>
                                     </a>
@@ -376,7 +376,7 @@
                                         <span class="song-title">Озин гана</span>
                                         <span class="song-artist">Кайрат Нуртас</span>
                                     </div>
-                                    <a href="https://emancipator.bandcamp.com/track/anthem" class="bandcamp-link" target="_blank">
+                                    <a href="{{ asset('songs/kairat_nurtas_-_ozin_gan202.mp3') }}" class="bandcamp-link" title="Скачать" target="_blank">
                                         <img class="bandcamp-grey" src="/img/bandcamp-grey.svg"/>
                                         <img class="bandcamp-white" src="/img/bandcamp-white.svg"/>
                                     </a>
@@ -393,7 +393,7 @@
                                         <span class="song-title">Анама</span>
                                         <span class="song-artist">Кайрат Нуртас</span>
                                     </div>
-                                    <a href="https://emancipator.bandcamp.com/track/anthem" class="bandcamp-link" target="_blank">
+                                    <a href="{{ asset('songs/kairat_nurtas_-_anama.mp3') }}" class="bandcamp-link" title="Скачать" target="_blank">
                                         <img class="bandcamp-grey" src="/img/bandcamp-grey.svg"/>
                                         <img class="bandcamp-white" src="/img/bandcamp-white.svg"/>
                                     </a>
@@ -410,7 +410,7 @@
                                         <span class="song-title">Омир гой</span>
                                         <span class="song-artist">Кайрат Нуртас</span>
                                     </div>
-                                    <a href="https://emancipator.bandcamp.com/track/anthem" class="bandcamp-link" target="_blank">
+                                    <a href="{{ asset('songs/kairat_nurtas_-_omir_goi.mp3') }}" class="bandcamp-link" title="Скачать" target="_blank">
                                         <img class="bandcamp-grey" src="/img/bandcamp-grey.svg"/>
                                         <img class="bandcamp-white" src="/img/bandcamp-white.svg"/>
                                     </a>
@@ -427,7 +427,7 @@
                                         <span class="song-title">Маралым</span>
                                         <span class="song-artist">Кайрат Нуртас</span>
                                     </div>
-                                    <a href="https://emancipator.bandcamp.com/track/anthem" class="bandcamp-link" target="_blank">
+                                    <a href="{{ asset('songs/kairat_nurtas_-_maralym.mp3') }}" class="bandcamp-link" title="Скачать" target="_blank">
                                         <img class="bandcamp-grey" src="/img/bandcamp-grey.svg"/>
                                         <img class="bandcamp-white" src="/img/bandcamp-white.svg"/>
                                     </a>
@@ -444,7 +444,7 @@
                                         <span class="song-title">Кеширейин</span>
                                         <span class="song-artist">Кайрат Нуртас</span>
                                     </div>
-                                    <a href="https://emancipator.bandcamp.com/track/anthem" class="bandcamp-link" target="_blank">
+                                    <a href="{{ asset('songs/kairat_nurtas_-_keshireyin.mp3') }}" class="bandcamp-link" title="Скачать" target="_blank">
                                         <img class="bandcamp-grey" src="/img/bandcamp-grey.svg"/>
                                         <img class="bandcamp-white" src="/img/bandcamp-white.svg"/>
                                     </a>
@@ -461,7 +461,7 @@
                                         <span class="song-title">Балалары акесине ан арнады</span>
                                         <span class="song-artist">Кайрат Нуртас</span>
                                     </div>
-                                    <a href="https://emancipator.bandcamp.com/track/anthem" class="bandcamp-link" target="_blank">
+                                    <a href="{{ asset('songs/kayrat-nrtasty-balalary-kesne-n-arnady-2019.mp3') }}" class="bandcamp-link" title="Скачать" target="_blank">
                                         <img class="bandcamp-grey" src="/img/bandcamp-grey.svg"/>
                                         <img class="bandcamp-white" src="/img/bandcamp-white.svg"/>
                                     </a>
@@ -478,7 +478,7 @@
                                         <span class="song-title">Адамдар, Адамдар</span>
                                         <span class="song-artist">Кайрат Нуртас & Серикбол Саулаубек</span>
                                     </div>
-                                    <a href="https://emancipator.bandcamp.com/track/anthem" class="bandcamp-link" target="_blank">
+                                    <a href="{{ asset('songs/kayrat-nrtasty-balalary-kesne-n-arnady-2019.mp3') }}" class="bandcamp-link" title="Скачать" target="_blank">
                                         <img class="bandcamp-grey" src="/img/bandcamp-grey.svg"/>
                                         <img class="bandcamp-white" src="/img/bandcamp-white.svg"/>
                                     </a>

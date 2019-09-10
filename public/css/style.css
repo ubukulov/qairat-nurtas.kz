@@ -3,12 +3,16 @@ body {
   padding: 0px;
   margin: 0px;
   overflow-x: hidden;
-  background: #D1C6C2;
+  background: #fff;
 }
 #wrap {
   width: 1000px;
   margin: 0 auto;
   background: #fff;
+}
+.bandcamp-grey,
+.bandcamp-white {
+  width: 24px;
 }
 #header .header {
   background: url("../img/header_bg.jpg") center center no-repeat;
@@ -31,6 +35,11 @@ body {
   height: 300px;
   max-width: 100%;
 }
+.news_q .news_img {
+  width: 100%;
+  height: 250px;
+  max-width: 100%;
+}
 .news_q .news_item {
   width: 100%;
 }
@@ -46,14 +55,21 @@ body {
 }
 .post_content .post_im {
   float: left;
+  width: 100%;
   margin-right: 20px;
   margin-bottom: 20px;
 }
 .post_content .post_im img {
   text-align: left;
+  max-width: 100%;
 }
 .post_content .post_desc {
   text-align: justify;
+}
+.breadcrumb {
+  font-size: 12px;
+  background-color: #fff;
+  padding: 0px;
 }
 .footer {
   padding: 40px 0px;
