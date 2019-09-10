@@ -30,9 +30,9 @@
                                     <div class="col-sm-3">
                                         <i class="far fa-eye"></i>&nbsp;{{ $post->views }}
                                     </div>
-                                    <div class="col-sm-3">
+                                    {{--<div class="col-sm-3">
                                         <i class="far fa-comment"></i>&nbsp; 26
-                                    </div>
+                                    </div>--}}
                                     <div class="col-sm-3">
 
                                     </div>

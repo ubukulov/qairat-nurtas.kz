@@ -23,7 +23,6 @@
 {{--    <script type="text/javascript" src="../../dist/amplitude.js"></script>--}}
 
     <!-- Include Style Sheet -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}"/>
     <meta property="og:title" content="{{ $title }}"/>
     <meta property="og:description" content=""/>
     {{--<meta property="og:image" content="http://www.site.com/logo.png" />--}}
