@@ -14,7 +14,7 @@
                 <a class="nav-link" href="{{ route('home') }}">Главная <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('page.show', ['alias' => 'test']) }}">Песни</a>
+                <a class="nav-link" href="{{ route('page.show', ['alias' => 'qairat-nurtas-musics']) }}">Песни</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('page.show', ['alias' => 'test']) }}">Клипы</a>

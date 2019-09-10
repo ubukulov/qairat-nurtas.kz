@@ -10,10 +10,18 @@ class PageController extends BaseController
     public function show($alias)
     {
         $page = Page::whereAlias($alias)->first();
-        if ($page) {
-            return view('page.show', compact('page'));
-        }
+        //if ($page) {
+            switch ($alias) {
+                case "qairat-nurtas-musics":
+                    return view('page.musics');
+                    break;
 
-        abort(404);
+                default:
+                    return view('page.show', compact('page'));
+                    break;
+            }
+//        }
+//
+//        abort(404);
     }
 }
