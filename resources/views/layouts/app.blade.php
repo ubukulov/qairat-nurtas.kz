@@ -13,6 +13,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="keywords" content="кайрат нуртас, кайрат нуртас биография, биография кайрата нуртаса, песни кайрата нуртас, клипы кайрат нуртас, qairat nurtas, kairat nurtas, pesni kairat nurtas, klipi kairat nurtas, дети кайрат нуртас, семья кайрат нуртас">
     <meta name="description" content="Последние новости кайрат нуртас">
+    <meta property="og:title" content="{{ $title }}"/>
+    <meta property="og:description" content="{!! $og_desc !!}"/>
+    <meta property="og:image" content="{{$og_img}}" />
+    <meta property="og:url" content="{{ URL::to($_SERVER['REQUEST_URI']) }}"/>
+    <meta property="og:site_name" content="Сайт про Кайрата Нуртаса"/>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
@@ -25,11 +30,6 @@
 
     <!-- Include Style Sheet -->
     <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}"/>
-    <meta property="og:title" content="{{ $title }}"/>
-    <meta property="og:description" content="{!! $og_desc !!}"/>
-    <meta property="og:image" content="{{$og_img}}" />
-    <meta property="og:url" content="http://www.qairat-nurtas.kz/"/>
-    <meta property="og:site_name" content="Сайт про Кайрата Нуртаса"/>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
