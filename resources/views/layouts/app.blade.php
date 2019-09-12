@@ -14,7 +14,7 @@
     <meta name="keywords" content="кайрат нуртас, кайрат нуртас биография, биография кайрата нуртаса, песни кайрата нуртас, клипы кайрат нуртас, qairat nurtas, kairat nurtas, pesni kairat nurtas, klipi kairat nurtas, дети кайрат нуртас, семья кайрат нуртас">
     <meta name="description" content="Последние новости кайрат нуртас">
     <meta property="og:title" content="{{ $title }}"/>
-    <meta property="og:description" content="{!! $og_desc !!}"/>
+    <meta property="og:description" content="{{$og_desc}}"/>
     <meta property="og:image" content="{{$og_img}}" />
     <meta property="og:url" content="{{ URL::to($_SERVER['REQUEST_URI']) }}"/>
     <meta property="og:site_name" content="Сайт про Кайрата Нуртаса"/>
