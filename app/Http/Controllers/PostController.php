@@ -13,6 +13,8 @@ class PostController extends BaseController
         $post->views++;
         $post->save();
         $title = $this->title .= $post->title;
-        return view('post.show', compact('post', 'title'));
+        $og_desc = $post->description;
+        $og_img = $post->getImage();
+        return view('post.show', compact('post', 'title', 'og_desc', 'og_img'));
     }
 }
