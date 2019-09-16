@@ -84,7 +84,8 @@ class PostController extends Controller
      */
     public function edit($id)
     {
-        //
+        $post = Post::findOrFail($id);
+        return view('admin.post.edit', compact('post'));
     }
 
     /**
@@ -96,7 +97,31 @@ class PostController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $data = $request->except('file');
+        $post = Post::findOrFail($id);
+        $post->update($data);
+        $post->save();
+
+        if ($request->hasFile('file')) {
+            $file = $request->file('file');
+            $img = \Image::make($file->getPathname());
+            $hash_name = md5($file->getClientOriginalName());
+            $file_name = $post->id."_".$hash_name.'.jpg';
+
+            $save_path = base_path('public/'.$this->imagePath);
+            $img->save($save_path.$file_name);
+
+            // сохранение миниатюры
+
+            $save_path_thumbs = base_path('public/'.$this->imagePathThumbs);
+
+            $img->resize(300, 300)->save($save_path_thumbs.$file_name);
+
+            $post->image = $file_name;
+            $post->save();
+        }
+
+        return redirect()->route('admin.post.index');
     }
 
     /**

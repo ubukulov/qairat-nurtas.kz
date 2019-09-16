@@ -2,16 +2,17 @@
     <li class="header">MAIN NAVIGATION</li>
     <li class="active">
         <a href="{{ route('admin.dashboard') }}">
-            <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+            <i class="fa fa-dashboard"></i> <span>Панель управление</span>
         </a>
     </li>
     <li>
         <a href="{{ route('admin.post.index') }}">
             <i class="fa fa-files-o"></i>
-            <span>Товары</span>
+            <span>Список товаров</span>
         </a>
     </li>
-    <li>
+
+    {{--<li>
         <a href="pages/widgets.html">
             <i class="fa fa-th"></i> <span>Widgets</span>
             <span class="pull-right-container">
@@ -151,5 +152,5 @@
     <li class="header">LABELS</li>
     <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
     <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
-    <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>
+    <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>--}}
 </ul>

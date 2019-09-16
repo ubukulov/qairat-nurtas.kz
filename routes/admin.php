@@ -9,6 +9,7 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => ['web
     # Posts
     Route::get('/posts', 'PostController@index')->name('admin.post.index');
     Route::get('/post/create', 'PostController@create')->name('admin.post.create');
-    Route::get('/post/id/edit', 'PostController@edit')->name('admin.post.edit');
+    Route::get('/post/{id}/edit', 'PostController@edit')->name('admin.post.edit');
     Route::post('/post/store', 'PostController@store')->name('admin.post.store');
+    Route::post('/post/{id}/update', 'PostController@update')->name('admin.post.update');
 });
