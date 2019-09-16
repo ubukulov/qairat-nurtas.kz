@@ -610,6 +610,7 @@
         // instance, using default configuration.
         CKEDITOR.replace('description');
         CKEDITOR.replace('full_description');
+        CKEDITOR.config.allowedContent = true;
     })
 </script>
 </body>
