@@ -12,4 +12,11 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => ['web
     Route::get('/post/{id}/edit', 'PostController@edit')->name('admin.post.edit');
     Route::post('/post/store', 'PostController@store')->name('admin.post.store');
     Route::post('/post/{id}/update', 'PostController@update')->name('admin.post.update');
+
+    # Clips
+    Route::get('/clips', 'ClipController@index')->name('admin.clip.index');
+    Route::get('/clip/create', 'ClipController@create')->name('admin.clip.create');
+    Route::get('/clip/{id}/edit', 'ClipController@edit')->name('admin.clip.edit');
+    Route::post('/clip/store', 'ClipController@store')->name('admin.clip.store');
+    Route::post('/clip/{id}/update', 'ClipController@update')->name('admin.clip.update');
 });

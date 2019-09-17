@@ -22,9 +22,9 @@
             <li class="nav-item @if($_SERVER['REQUEST_URI'] == '/page/qairat-nurtas-musics') active @endif">
                 <a class="nav-link" href="{{ route('page.show', ['alias' => 'qairat-nurtas-musics']) }}">Песни</a>
             </li>
-            {{--<li class="nav-item">--}}
-                {{--<a class="nav-link" href="{{ route('page.show', ['alias' => 'test']) }}">Клипы</a>--}}
-            {{--</li>--}}
+            <li class="nav-item @if($_SERVER['REQUEST_URI'] == '/page/kajrat-nurtas-klipy') active @endif">
+                <a class="nav-link" href="{{ route('page.show', ['alias' => 'kajrat-nurtas-klipy']) }}">Клипы</a>
+            </li>
             <li class="nav-item @if($_SERVER['REQUEST_URI'] == '/page/biografiya-kayrata-nurtasa') active @endif">
                 <a class="nav-link" href="{{ route('page.show', ['alias' => 'biografiya-kayrata-nurtasa']) }}">Биография</a>
             </li>

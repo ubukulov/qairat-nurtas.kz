@@ -28,10 +28,10 @@ Breadcrumbs::register('post.show', function ($breadcrumbs, $post = null) {
 });
 
 // Page
-Breadcrumbs::register('page.show', function ($breadcrumbs, $page = null) {
+Breadcrumbs::register('page.show', function ($breadcrumbs, $page = null, $b_title = null) {
     $breadcrumbs->parent('homepage');
     if ($page == null) {
-        $breadcrumbs->push('Музыки');
+        $breadcrumbs->push($b_title);
     } else {
         $breadcrumbs->push($page->title);
     }

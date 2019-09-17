@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-    {!! Breadcrumbs::render('page.show') !!}
+    {!! Breadcrumbs::render('page.show', null, 'Музыки') !!}
     <div class="row">
         <div class="col-md-12">
             <div class="page_content">

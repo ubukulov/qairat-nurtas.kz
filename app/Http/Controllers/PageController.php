@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Clip;
 use App\Page;
 use Illuminate\Http\Request;
 
@@ -17,6 +18,12 @@ class PageController extends BaseController
         } elseif($alias == 'qairat-nurtas-musics') {
             return view('page.musics', [
                 'title' => 'Кайрат Нуртас | Музыки'
+            ]);
+        } elseif($alias == 'kajrat-nurtas-klipy') {
+            $clips = Clip::orderBy('id', 'DESC')->paginate(10);
+            return view('page.clips', [
+                'title' => 'Кайрат Нуртас | Клипы',
+                'clips' => $clips
             ]);
         }
 
