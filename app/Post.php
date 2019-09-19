@@ -33,11 +33,11 @@ class Post extends Model
 
     public function getImage()
     {
-        return asset('uploads/posts/'.$this->image);
+        return url('uploads/posts/'.$this->image);
     }
 
     public function getImageThumbs()
     {
-        return asset('uploads/posts/thumbs/'.$this->image);
+        return url('uploads/posts/thumbs/'.$this->image);
     }
 }
