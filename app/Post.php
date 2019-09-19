@@ -40,4 +40,9 @@ class Post extends Model
     {
         return url('uploads/posts/thumbs/'.$this->image);
     }
+
+    public function url()
+    {
+        return route('post.show', ['alias' => $this->alias, 'id' => $this->id]);
+    }
 }

@@ -12,17 +12,29 @@ class PageController extends BaseController
     {
         $page = Page::whereAlias($alias)->first();
         if ($page) {
-            $title = 'Кайрат Нуртас | '.$page->title;
-            $og_desc = $page->description;
-            return view('page.show', compact('page', 'title', 'og_desc'));
+            $this->seo()->setTitle('Биография Кайрата Нуртаса');
+            $this->seo()->setDescription('биография кайрата нуртаса');
+            $this->seo()->addImages(url('/img/album-art/kajrat_nurtas.jpg'));
+            $this->seo()->setCanonical($page->url());
+
+            return view('page.show', compact('page'));
+
         } elseif($alias == 'qairat-nurtas-musics') {
-            return view('page.musics', [
-                'title' => 'Кайрат Нуртас | Музыки'
-            ]);
+            $this->seo()->setTitle('Песни Кайрата Нуртаса');
+            $this->seo()->setDescription('На сайте вы можете слушать и скачать песни кайрата нуртаса');
+            $this->seo()->addImages(url('/img/album-art/kajrat_nurtas.jpg'));
+            $this->seo()->setCanonical(url('page/qairat-nurtas-musics'));
+
+            return view('page.musics');
+
         } elseif($alias == 'kajrat-nurtas-klipy') {
             $clips = Clip::orderBy('id', 'DESC')->paginate(10);
+            $this->seo()->setTitle('Клипы Кайрата Нуртаса');
+            $this->seo()->setDescription('На сайте вы можете посмотреть клипы кайрата нуртаса');
+            $this->seo()->addImages(url('/img/album-art/kajrat_nurtas.jpg'));
+            $this->seo()->setCanonical(url('page/kajrat-nurtas-klipy'));
+
             return view('page.clips', [
-                'title' => 'Кайрат Нуртас | Клипы',
                 'clips' => $clips
             ]);
         }

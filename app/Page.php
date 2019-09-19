@@ -13,4 +13,9 @@ class Page extends Model
     protected $dates = [
         'created_at', 'updated_at'
     ];
+
+    public function url()
+    {
+        return route('page.show', ['alias' => $this->alias]);
+    }
 }

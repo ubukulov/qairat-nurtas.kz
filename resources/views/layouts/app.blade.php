@@ -8,26 +8,20 @@
             'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-WT24XRW');</script>
     <!-- End Google Tag Manager -->
+
     <!-- Required meta tags -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="keywords" content="кайрат нуртас,скачать кайрат нуртас,кайрат нуртас 2019,скачать песни кайрата нуртаса,бесплатны кайрат нуртас,кайрат нуртас скачать бесплатно,кайрат нуртас +все песни,скачать песнью кайрат нуртас,бесплатные песни кайрата нуртаса,скачать кайрат нуртас 2019,слушать кайрат нуртас,музыка кайрат нуртас,кайрат нуртас mp3,скачать музыку кайрат нуртас,кайрат нуртас скачать mp3,кайрат нуртас ашуыма,кайрат нуртас марал,кайрат нуртас маралым,кайрат нуртас ашуыма тиме,кайрат нуртас песни 2019,кайрат нуртас +все песни скачать бесплатно	,кайрат нуртас +все песни слушать,кайрат нуртас ай,кайрат нуртас +и нюша,кайрат нуртас 2019 скачать бесплатно,кайрат нуртас алматы,кайрат клип,песня кайрат,нуртас клип,песня нуртас">
-    <meta name="description" content="Последние новости кайрат нуртас">
-    <meta property="og:title" content="{{ $title }}"/>
-    <meta property="og:description" content="{!! $og_desc !!}"/>
-    <meta property="og:image" content="{{$og_img}}" />
-    <meta property="og:url" content="{{ URL::to($_SERVER['REQUEST_URI']) }}"/>
-    <meta property="og:site_name" content="Сайт про Кайрата Нуртаса"/>
+    {!! SEO::generate() !!}
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/media.css') }}">
-    <title>{{ $title }}</title>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/amplitudejs@5.0.2/dist/amplitude.js"></script>
-    <!-- Include Amplitude JS -->
-{{--    <script type="text/javascript" src="../../dist/amplitude.js"></script>--}}
 
     <!-- Include Style Sheet -->
     <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}"/>

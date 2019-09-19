@@ -12,9 +12,13 @@ class PostController extends BaseController
         $post = Post::findOrFail($id);
         $post->views++;
         $post->save();
-        $title = $this->title .= $post->title;
-        $og_desc = $post->description;
-        $og_img = $post->getImage();
-        return view('post.show', compact('post', 'title', 'og_desc', 'og_img'));
+        $this->seo()->setDescription(str_replace("&nbsp;",' ',strip_tags($post->description)));
+        $this->seo()->addImages($post->getImage());
+        $this->seo()->setTitle($post->title);
+        $this->seo()->opengraph()->setType('article');
+        $this->seo()->opengraph()->setUrl($post->url());
+        $this->seo()->opengraph()->addProperty('image:size', 300);
+        $this->seo()->setCanonical($post->url());
+        return view('post.show', compact('post'));
     }
 }
