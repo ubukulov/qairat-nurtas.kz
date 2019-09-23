@@ -8,7 +8,7 @@
     <li>
         <a href="{{ route('admin.post.index') }}">
             <i class="fa fa-files-o"></i>
-            <span>Список товаров</span>
+            <span>Список новостей</span>
         </a>
     </li>
     <li>
