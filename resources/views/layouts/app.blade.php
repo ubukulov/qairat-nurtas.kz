@@ -25,6 +25,9 @@
 
     <!-- Include Style Sheet -->
     <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}"/>
+
+    <!-- Include Amplitude JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/amplitudejs@5.0.2/dist/amplitude.js"></script>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
