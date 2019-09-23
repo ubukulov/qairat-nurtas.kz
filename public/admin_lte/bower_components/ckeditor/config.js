@@ -42,4 +42,5 @@ CKEDITOR.editorConfig = function( config ) {
     config.filebrowserUploadUrl = '/admin_lte/bower_components/kcfinder/upload.php?opener=ckeditor&type=files';
     config.filebrowserImageUploadUrl = '/admin_lte/bower_components/kcfinder/upload.php?opener=ckeditor&type=images';
     config.filebrowserFlashUploadUrl = '/admin_lte/bower_components/kcfinder/upload.php?opener=ckeditor&type=flash';
+    config.extraPlugins = 'justify';
 };
