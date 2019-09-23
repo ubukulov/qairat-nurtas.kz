@@ -12,3 +12,4 @@ yarn-error.log
 .idea/
 /public/files/
 /public/sitemap.xml
+/public/uploads
