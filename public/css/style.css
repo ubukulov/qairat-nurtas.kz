@@ -72,6 +72,7 @@ body {
 }
 .post_content .post_desc img {
   max-width: 100%;
+  height: auto !important;
 }
 .breadcrumb {
   font-size: 12px;
