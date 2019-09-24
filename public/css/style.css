@@ -35,8 +35,9 @@ body {
 }
 .news_q .news_im {
   width: 300px;
-  height: 300px;
+  height: auto;
   max-width: 100%;
+  margin-bottom: 20px;
 }
 .news_q .news_img {
   width: 100%;
@@ -88,4 +89,16 @@ body {
 }
 .clip_content .clip_im {
   margin-bottom: 20px;
+}
+.read_more {
+  margin-bottom: 10px;
+}
+.read_more a {
+  font-size: 14px;
+  color: #000;
+  border-bottom: 1px dashed;
+}
+.read_more a:hover {
+  border-bottom: 1px solid;
+  text-decoration: none;
 }

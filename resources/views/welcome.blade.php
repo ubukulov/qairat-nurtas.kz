@@ -22,20 +22,20 @@
                             <div class="news_desc">
                                 <p>{!! $post->description !!}</p>
                             </div>
+                            <div class="read_more">
+                                <a href="{{ route('post.show', ['alias' => $post->alias, 'id' => $post->id]) }}">Подробнее</a>
+                            </div>
                             <div class="news_inform">
                                 <div class="row">
-                                    <div class="col-sm-3">
+                                    <div class="col-md-6">
                                         <i class="far fa-clock"></i>&nbsp;{{ date("d.m.Y", strtotime($post->created_at)) }}
                                     </div>
-                                    <div class="col-sm-3">
+                                    <div class="col-md-6">
                                         <i class="far fa-eye"></i>&nbsp;{{ $post->views }}
                                     </div>
                                     {{--<div class="col-sm-3">
                                         <i class="far fa-comment"></i>&nbsp; 26
                                     </div>--}}
-                                    <div class="col-sm-3">
-
-                                    </div>
                                 </div>
                             </div>
                         </div>
