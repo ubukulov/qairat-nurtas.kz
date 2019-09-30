@@ -26,4 +26,35 @@
             <div class="pluso" data-background="transparent" data-options="medium,round,line,horizontal,counter,theme=04" data-services="vkontakte,facebook,odnoklassniki,twitter,google,moimir"></div>
         </div>
     </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="page_content">
+                <div class="page_title">
+                    <h3>Другие клипы</h3>
+                </div>
+
+                <div class="page_desc">
+                    <div class="row">
+                        @foreach($clips as $cl)
+                            <div class="col-md-6">
+                                <div class="clip_content">
+                                    <div class="clip_im">
+                                        <a href="{{ $cl->url() }}">
+                                            <img src="{{ $cl->getImageThumbs() }}" alt="{{ $cl->title }}">
+                                        </a>
+                                    </div>
+                                    <div class="clip_title">
+                                        <a href="{{ $cl->url() }}">
+                                            {{ $cl->title }}
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 @stop

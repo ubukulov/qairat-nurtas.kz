@@ -16,6 +16,7 @@ class ClipController extends BaseController
         $this->seo()->setDescription($clip->title);
         $this->seo()->setCanonical($clip->url());
         $this->seo()->addImages($clip->getImage());
-        return view('clip.show', compact('clip'));
+        $clips = Clip::where('id', '<>', $id)->get();
+        return view('clip.show', compact('clip', 'clips'));
     }
 }
