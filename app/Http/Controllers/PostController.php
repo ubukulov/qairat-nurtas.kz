@@ -12,6 +12,7 @@ class PostController extends BaseController
         $post = Post::findOrFail($id);
         $post->views++;
         $post->save();
+        $this->seo()->metatags()->setKeywords($post->keywords);
         $this->seo()->setDescription(str_replace("&nbsp;",' ',strip_tags($post->description)));
         $this->seo()->addImages($post->getImage());
         $this->seo()->setTitle($post->title);

@@ -73,6 +73,11 @@ body {
 .post_content .post_desc img {
   max-width: 100%;
   height: auto !important;
+  margin: 5px;
+}
+.post_content .post_desc span {
+  font-family: Verdana, Arial, sans-serif !important;
+  font-size: 14px;
 }
 .breadcrumb {
   font-size: 12px;
