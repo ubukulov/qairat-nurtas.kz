@@ -17,6 +17,12 @@
             <span>Список клипов</span>
         </a>
     </li>
+    <li>
+        <a href="{{ route('admin.page.index') }}">
+            <i class="fa fa-files-o"></i>
+            <span>Список страницы</span>
+        </a>
+    </li>
 
     {{--<li>
         <a href="pages/widgets.html">

@@ -19,4 +19,11 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => ['web
     Route::get('/clip/{id}/edit', 'ClipController@edit')->name('admin.clip.edit');
     Route::post('/clip/store', 'ClipController@store')->name('admin.clip.store');
     Route::post('/clip/{id}/update', 'ClipController@update')->name('admin.clip.update');
+
+    # Pages
+    Route::get('/pages', 'PageController@index')->name('admin.page.index');
+    Route::get('/page/create', 'PageController@create')->name('admin.page.create');
+    Route::get('/page/{id}/edit', 'PageController@edit')->name('admin.page.edit');
+    Route::post('/page/store', 'PageController@store')->name('admin.page.store');
+    Route::post('/page/{id}/update', 'PageController@update')->name('admin.page.update');
 });
