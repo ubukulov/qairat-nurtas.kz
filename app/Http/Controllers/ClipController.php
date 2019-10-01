@@ -13,6 +13,7 @@ class ClipController extends BaseController
         $clip->views++;
         $clip->save();
         $this->seo()->setTitle($clip->title);
+        $this->seo()->metatags()->setKeywords($clip->keywords);
         $this->seo()->setDescription($clip->title);
         $this->seo()->setCanonical($clip->url());
         $this->seo()->addImages($clip->getImage());
