@@ -37,7 +37,7 @@
                 <div class="post_desc">
                     <div class="row">
                         @foreach($clips as $cl)
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <div class="clip_content">
                                     <div class="clip_im">
                                         <a href="{{ $cl->url() }}">
