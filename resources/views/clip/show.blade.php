@@ -4,7 +4,7 @@
         <div class="col-md-12">
             <div class="post_content">
                 <div class="post_title">
-                    <h2>{{ $clip->title }}</h2>
+                    <h1>{{ $clip->title }}</h1>
                 </div>
 
                 <div class="post_desc">
@@ -29,12 +29,12 @@
 
     <div class="row">
         <div class="col-md-12">
-            <div class="page_content">
-                <div class="page_title">
-                    <h3>Другие клипы</h3>
+            <div class="post_content" style="margin-top: 40px;">
+                <div class="post_title">
+                    <h2>Другие клипы</h2>
                 </div>
 
-                <div class="page_desc">
+                <div class="post_desc">
                     <div class="row">
                         @foreach($clips as $cl)
                             <div class="col-md-6">

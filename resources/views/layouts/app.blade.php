@@ -44,13 +44,13 @@
     <div id="content">
         <div class="container">
             <div class="row">
-                <div class="col-md-9">
+                <div class="col-md-12">
                     <div class="content">
                         @yield('content')
                     </div>
                 </div>
 
-                <div class="col-md-3">
+                {{--<div class="col-md-3">--}}
                     {{--<div class="right_content">
                         <div class="news_last">
                             <div class="news_last_title">Последние новости</div>
@@ -71,7 +71,7 @@
                             <img src="{{ asset('img/adv200x500.jpg') }}" alt="">
                         </div>
                     </div>--}}
-                </div>
+                {{--</div>--}}
             </div>
         </div>
     </div>

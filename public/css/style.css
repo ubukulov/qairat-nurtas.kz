@@ -54,6 +54,15 @@ body {
   font-size: 12px;
   color: #424242;
 }
+.news_q .news_item .news_inform div {
+  margin-right: 20px;
+}
+.news_q .news_item .news_date {
+  float: left;
+}
+.news_q .news_item .views_count {
+  float: left;
+}
 .post_content .post_title {
   margin-bottom: 20px;
 }
@@ -95,6 +104,9 @@ body {
 }
 .clip_content .clip_im {
   margin-bottom: 20px;
+}
+.clip_content .clip_im img {
+  max-width: 100%;
 }
 .read_more {
   margin-bottom: 10px;

@@ -5,7 +5,11 @@
         <div class="col-md-12">
             <div class="post_content">
                 <div class="post_title">
-                    <h2>{{ $post->title }}</h2>
+                    @if($agent->isMobile())
+                        <h4>{{ $post->title }}</h4>
+                    @else
+                        <h1>{{ $post->title }}</h1>
+                    @endif
                 </div>
                 <div class="post_im">
                     <img src="{{ $post->getImage() }}" alt="">
