@@ -28,7 +28,7 @@ class PageController extends BaseController
             return view('page.musics');
 
         } elseif($alias == 'kajrat-nurtas-klipy') {
-            $clips = Clip::orderBy('id', 'DESC')->paginate(10);
+            $clips = Clip::orderBy('id', 'DESC')->get();
             $this->seo()->setTitle('Клипы Кайрата Нуртаса');
             $this->seo()->setDescription('На сайте вы можете посмотреть клипы кайрата нуртаса');
             $this->seo()->addImages(url('/img/album-art/kajrat_nurtas.jpg'));

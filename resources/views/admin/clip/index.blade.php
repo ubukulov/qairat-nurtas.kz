@@ -22,7 +22,7 @@
                     @endforeach
                 </tbody>
             </table>
-
+            {{ $clips->links() }}
         </div>
     </div>
 @stop
