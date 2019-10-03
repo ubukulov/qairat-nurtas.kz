@@ -2,8 +2,11 @@
 
 namespace App\Console\Commands;
 
+use App\Clip;
+use App\Post;
+use Carbon\Carbon;
 use Illuminate\Console\Command;
-use Spatie\Sitemap\SitemapGenerator;
+use Spatie\Sitemap\Sitemap;
 
 class GenerateSitemap extends Command
 {
@@ -38,7 +41,23 @@ class GenerateSitemap extends Command
      */
     public function handle()
     {
-        SitemapGenerator::create(config('app.url'))
-            ->writeToFile(public_path('sitemap.xml'));
+        $posts = Post::all();
+        $clips = Clip::all();
+        $sitemap = Sitemap::create('https://qairat-nurtas.kz');
+
+        foreach($posts as $post) {
+            $sitemap->add($post->url());
+        }
+
+        foreach($clips as $clip) {
+            $sitemap->add($clip->url());
+        }
+        $sitemap->add(url('page/biografiya-kayrata-nurtasa'));
+        $sitemap->add(url('page/kajrat-nurtas-klipy'));
+        $sitemap->add(url('page/qairat-nurtas-musics'));
+
+        $sitemap->writeToFile(public_path('sitemap.xml'));
+
+        $this->info('Sitemap generate successfully.');
     }
 }
