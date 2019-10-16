@@ -9,7 +9,7 @@
                     <div class="col-md-4">
                         <div class="news_im">
                             <a href="{{ route('post.show', ['alias' => $post->alias, 'id' => $post->id]) }}">
-                                <img class="news_img" src="{{ $post->getImage() }}" alt="">
+                                <img class="news_img" src="{{ $post->getImageThumbs() }}" alt="">
                             </a>
                         </div>
                     </div>

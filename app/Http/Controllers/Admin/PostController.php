@@ -56,7 +56,9 @@ class PostController extends Controller
 
             $save_path_thumbs = base_path('public/'.$this->imagePathThumbs);
 
-            $img->resize(300, 300)->save($save_path_thumbs.$file_name);
+            $img->resize(null, 250, function($constraint) {
+                $constraint->aspectRatio();
+            })->save($save_path_thumbs.$file_name);
 
             $post->image = $file_name;
             $post->save();
@@ -115,7 +117,13 @@ class PostController extends Controller
 
             $save_path_thumbs = base_path('public/'.$this->imagePathThumbs);
 
-            $img->resize(300, 300)->save($save_path_thumbs.$file_name);
+            $img->resize(null, 250, function($constraint){
+                $constraint->aspectRatio();
+            })->save($save_path_thumbs.$file_name);
+
+            // удалит старую картинку
+            unlink($save_path.$post->image);
+            unlink($save_path_thumbs.$post->image);
 
             $post->image = $file_name;
             $post->save();

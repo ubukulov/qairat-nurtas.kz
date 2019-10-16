@@ -44,6 +44,7 @@ class GenerateSitemap extends Command
         $posts = Post::all();
         $clips = Clip::all();
         $sitemap = Sitemap::create('https://qairat-nurtas.kz');
+        $sitemap->add('https://qairat-nurtas.kz');
 
         foreach($posts as $post) {
             $sitemap->add($post->url());
