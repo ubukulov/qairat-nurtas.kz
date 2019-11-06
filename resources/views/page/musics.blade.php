@@ -263,7 +263,7 @@
                                     </a>
                                     <span class="song-duration">3:37</span>
                                 </div>
-                                <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="10">
+                                <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="11">
                                     <div class="song-now-playing-icon-container">
                                         <div class="play-button-container">
 
@@ -280,7 +280,7 @@
                                     </a>
                                     <span class="song-duration">3:42</span>
                                 </div>
-                                <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="10">
+                                <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="12">
                                     <div class="song-now-playing-icon-container">
                                         <div class="play-button-container">
 
@@ -297,7 +297,7 @@
                                     </a>
                                     <span class="song-duration">3:53</span>
                                 </div>
-                                <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="10">
+                                <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="13">
                                     <div class="song-now-playing-icon-container">
                                         <div class="play-button-container">
 
@@ -314,7 +314,7 @@
                                     </a>
                                     <span class="song-duration">3:30</span>
                                 </div>
-                                <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="10">
+                                <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="14">
                                     <div class="song-now-playing-icon-container">
                                         <div class="play-button-container">
 
@@ -331,7 +331,7 @@
                                     </a>
                                     <span class="song-duration">4:08</span>
                                 </div>
-                                <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="10">
+                                <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="15">
                                     <div class="song-now-playing-icon-container">
                                         <div class="play-button-container">
 
@@ -348,7 +348,7 @@
                                     </a>
                                     <span class="song-duration">3:55</span>
                                 </div>
-                                <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="10">
+                                <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="16">
                                     <div class="song-now-playing-icon-container">
                                         <div class="play-button-container">
 
@@ -365,7 +365,7 @@
                                     </a>
                                     <span class="song-duration">3:47</span>
                                 </div>
-                                <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="10">
+                                <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="17">
                                     <div class="song-now-playing-icon-container">
                                         <div class="play-button-container">
 
@@ -382,7 +382,7 @@
                                     </a>
                                     <span class="song-duration">3:52</span>
                                 </div>
-                                <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="10">
+                                <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="18">
                                     <div class="song-now-playing-icon-container">
                                         <div class="play-button-container">
 
@@ -399,7 +399,7 @@
                                     </a>
                                     <span class="song-duration">3:39</span>
                                 </div>
-                                <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="10">
+                                <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="19">
                                     <div class="song-now-playing-icon-container">
                                         <div class="play-button-container">
 
@@ -416,7 +416,7 @@
                                     </a>
                                     <span class="song-duration">3:06</span>
                                 </div>
-                                <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="10">
+                                <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="20">
                                     <div class="song-now-playing-icon-container">
                                         <div class="play-button-container">
 
@@ -433,7 +433,7 @@
                                     </a>
                                     <span class="song-duration">3:46</span>
                                 </div>
-                                <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="10">
+                                <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="21">
                                     <div class="song-now-playing-icon-container">
                                         <div class="play-button-container">
 
@@ -450,7 +450,7 @@
                                     </a>
                                     <span class="song-duration">3:36</span>
                                 </div>
-                                <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="10">
+                                <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="22">
                                     <div class="song-now-playing-icon-container">
                                         <div class="play-button-container">
 
@@ -467,7 +467,7 @@
                                     </a>
                                     <span class="song-duration">3:46</span>
                                 </div>
-                                <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="10">
+                                <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="23">
                                     <div class="song-now-playing-icon-container">
                                         <div class="play-button-container">
 
