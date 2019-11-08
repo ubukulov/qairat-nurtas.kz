@@ -1,19 +1,41 @@
+@font-face {
+    font-family: 'DynamoCG';
+    src: url('../fonts/DynamoCG.eot');
+    src: url('../fonts/DynamoCG.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/DynamoCG.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DynamoCG';
+    src: url('../fonts/DynamoCG.ttf') format('truetype'),
+            url('../fonts/DynamoCG.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'BazookaCYR';
+    src: url('../fonts/BazookaCYR.eot');
+    src: url('../fonts/BazookaCYR.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/BazookaCYR.ttf') format('truetype'),
+         url('../fonts/BazookaCYR.woff') format('woff'),
+         url('../fonts/BazookaCYR.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans&display=swap');
 html,body {
   padding: 0px;
   margin: 0px;
   overflow-x: hidden;
-  background: #ccc !important;
+  background: url('../img/background_bg.jpg') !important;
 }
 #wrap {
   width: 1000px;
   margin: 0 auto;
-  background: #fff;
 }
 .clip {
   max-width: 100%;
-}
-#top-adv {
-
 }
 .bandcamp-grey,.bandcamp-white {
   width: 24px;
@@ -36,6 +58,8 @@ html,body {
 .news_q {
   width: 100%;
   margin-bottom: 20px;
+  background: #fff;
+  padding: 20px;
   .news_im {
     width: 300px;
     height: auto;
@@ -52,6 +76,19 @@ html,body {
 
     .news_title {
       margin-bottom: 20px;
+      font-family: 'BazookaCYR', sans-serif;
+      font-size: 30px;
+      line-height: 30px;
+      a {
+          color: orangered !important;
+      }
+    }
+    .news_desc {
+        p,span {
+            font-family: 'Alegreya Sans', sans-serif !important;
+            font-size: 20px;
+            font-weight: normal !important;
+        }
     }
     .news_inform {
       font-size: 12px;
@@ -104,13 +141,15 @@ html,body {
   padding: 0px;
 }
 .footer {
-  padding: 40px 0px;
-  background: #1b4b72;
-  color: #fff;
+  padding: 10px 0px;
+  background: #fff;
+  color: #000;
 }
 .clip_content {
   text-align: center;
   margin-bottom: 20px;
+  background: #fff;
+  padding: 20px;
 
   .clip_im {
     margin-bottom: 20px;
@@ -120,7 +159,12 @@ html,body {
     }
   }
   .clip_title {
-
+    font-family: 'BazookaCYR', sans-serif;
+    a {
+        color: orangered;
+        font-size: 20px;
+        line-height: 20px;
+    }
   }
 }
 .read_more {
@@ -129,7 +173,6 @@ html,body {
   a {
     font-size: 14px;
     color: #000;
-    border-bottom: 1px dashed;
 
     &:hover {
       border-bottom: 1px solid;

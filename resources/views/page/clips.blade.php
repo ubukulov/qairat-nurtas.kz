@@ -32,3 +32,8 @@
         </div>
     </div>
 @stop
+<style>
+    #content {
+        background: #fff;
+    }
+</style>

@@ -1,6 +1,5 @@
 @extends('layouts.app')
 @section('content')
-    {!! Breadcrumbs::render('homepage') !!}
     <div class="row">
         <div class="col-md-12">
             @foreach($posts as $post)

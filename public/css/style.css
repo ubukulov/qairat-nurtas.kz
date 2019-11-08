@@ -1,14 +1,40 @@
+@font-face {
+  font-family: 'DynamoCG';
+  src: url('../fonts/DynamoCG.eot');
+  src: url('../fonts/DynamoCG.eot?#iefix') format('embedded-opentype'), url('../fonts/DynamoCG.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'DynamoCG';
+  src: url('../fonts/DynamoCG.ttf') format('truetype'), url('../fonts/DynamoCG.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BazookaCYR';
+  src: url('../fonts/BazookaCYR.eot');
+  src: url('../fonts/BazookaCYR.eot?#iefix') format('embedded-opentype'), url('../fonts/BazookaCYR.ttf') format('truetype'), url('../fonts/BazookaCYR.woff') format('woff'), url('../fonts/BazookaCYR.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Alegreya Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Alegreya Sans Regular'), local('AlegreyaSans-Regular'), url(https://fonts.gstatic.com/s/alegreyasans/v10/5aUz9_-1phKLFgshYDvh6Vwt7VptuA.ttf) format('truetype');
+}
 html,
 body {
   padding: 0px;
   margin: 0px;
   overflow-x: hidden;
-  background: #ccc !important;
+  background: url('../img/background_bg.jpg') !important;
 }
 #wrap {
   width: 1000px;
   margin: 0 auto;
-  background: #fff;
 }
 .clip {
   max-width: 100%;
@@ -32,6 +58,8 @@ body {
 .news_q {
   width: 100%;
   margin-bottom: 20px;
+  background: #fff;
+  padding: 20px;
 }
 .news_q .news_im {
   width: 300px;
@@ -49,6 +77,18 @@ body {
 }
 .news_q .news_item .news_title {
   margin-bottom: 20px;
+  font-family: 'BazookaCYR', sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+}
+.news_q .news_item .news_title a {
+  color: orangered !important;
+}
+.news_q .news_item .news_desc p,
+.news_q .news_item .news_desc span {
+  font-family: 'Alegreya Sans', sans-serif !important;
+  font-size: 20px;
+  font-weight: normal !important;
 }
 .news_q .news_item .news_inform {
   font-size: 12px;
@@ -94,13 +134,15 @@ body {
   padding: 0px;
 }
 .footer {
-  padding: 40px 0px;
-  background: #1b4b72;
-  color: #fff;
+  padding: 10px 0px;
+  background: #fff;
+  color: #000;
 }
 .clip_content {
   text-align: center;
   margin-bottom: 20px;
+  background: #fff;
+  padding: 20px;
 }
 .clip_content .clip_im {
   margin-bottom: 20px;
@@ -108,13 +150,20 @@ body {
 .clip_content .clip_im img {
   max-width: 100%;
 }
+.clip_content .clip_title {
+  font-family: 'BazookaCYR', sans-serif;
+}
+.clip_content .clip_title a {
+  color: orangered;
+  font-size: 20px;
+  line-height: 20px;
+}
 .read_more {
   margin-bottom: 10px;
 }
 .read_more a {
   font-size: 14px;
   color: #000;
-  border-bottom: 1px dashed;
 }
 .read_more a:hover {
   border-bottom: 1px solid;
