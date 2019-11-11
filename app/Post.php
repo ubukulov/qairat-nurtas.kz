@@ -45,4 +45,10 @@ class Post extends Model
     {
         return route('post.show', ['alias' => $this->alias, 'id' => $this->id]);
     }
+
+    public function getOthers()
+    {
+        $posts = Post::where('id', '<>', $this->id)->orderBy('views', 'DESC')->limit(5)->get();
+        return $posts;
+    }
 }
