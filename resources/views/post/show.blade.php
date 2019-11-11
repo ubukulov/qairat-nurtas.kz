@@ -11,9 +11,6 @@
                         <h1>{{ $post->title }}</h1>
                     @endif
                 </div>
-                <div class="post_im">
-                    <img src="{{ $post->getImage() }}" alt="">
-                </div>
 
                 <div class="post_desc">
                     {!! $post->full_description !!}
