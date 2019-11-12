@@ -610,7 +610,7 @@
         // instance, using default configuration.
         CKEDITOR.replace('description');
         CKEDITOR.replace('full_description');
-        CKEDITOR.config.allowedContent = 'h1 h2 h3 h4 h5 h6 p';
+        // CKEDITOR.config.allowedContent = true;
         CKEDITOR.config.disallowedContent = 'span{style}';
     })
 </script>
