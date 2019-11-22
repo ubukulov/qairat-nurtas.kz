@@ -43,4 +43,23 @@ class Clip extends Model
     {
         return route('clip.show', ['alias' => $this->alias, 'id' => $this->id]);
     }
+
+    public function popular_clips()
+    {
+        $popular_clips = Clip::where('id', '<>', $this->id)
+            ->orderBy('views', 'DESC')
+            ->limit(6)
+            ->get();
+        return $popular_clips;
+    }
+
+    public function comments()
+    {
+        $comments = Comment::where(['comments.type' => 'clip', 'comments.pcp_id' => $this->id])
+                    ->select('comments.*', 'users.name as first_name')
+                    ->join('users', 'users.id', '=', 'comments.user_id')
+                    ->orderBy('id', 'DESC')
+                    ->get();
+        return $comments;
+    }
 }

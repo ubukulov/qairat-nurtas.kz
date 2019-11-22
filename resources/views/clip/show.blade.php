@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('content')
+    {!! Breadcrumbs::render('clip.show', $clip) !!}
     <div class="row">
         <div class="col-md-12">
             <div class="post_content">
@@ -31,12 +32,12 @@
         <div class="col-md-12">
             <div class="post_content" style="margin-top: 40px;">
                 <div class="post_title">
-                    <h2>Другие клипы</h2>
+                    <h2>Популярные клипы</h2>
                 </div>
 
                 <div class="post_desc">
                     <div class="row">
-                        @foreach($clips as $cl)
+                        @foreach($clip->popular_clips() as $cl)
                             <div class="col-md-4">
                                 <div class="clip_content">
                                     <div class="clip_im">
@@ -55,6 +56,23 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <comment type="clip" :pcp-id="{{ $clip->id }}"></comment>
+
+    <div class="row">
+        <div class="col-md-12">
+            @foreach ($clip->comments() as $item)
+                <div class="comment mb-2">
+                    <div>
+                        <i class="fas fa-user-circle"></i>&nbsp; {{ $item->first_name }}
+                    </div>
+                    <div>
+                        {{ $item->comment }}
+                    </div>
+                </div>
+            @endforeach
         </div>
     </div>
 @stop

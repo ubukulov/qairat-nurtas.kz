@@ -169,3 +169,7 @@ body {
   border-bottom: 1px solid;
   text-decoration: none;
 }
+.content iframe {
+  width: 100% !important;
+  height: 550px !important;
+}

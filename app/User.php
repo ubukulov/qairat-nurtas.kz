@@ -16,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password', 'type'
     ];
 
     /**
@@ -36,4 +36,31 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    /**
+     * Метод проверяет существует ли пользовател
+     * @param string $email
+     * @return object|boolean
+     */
+    public static function exists($email)
+    {
+        $user = User::where(['email' => $email])->first();
+        if ($user) {
+            return $user;
+        }
+        return false;
+    }
+
+    /**
+     * @param array $data
+     * @return object
+     */
+    public static function createUser($data)
+    {
+        $password = bcrypt('qn_123@#');
+        $user = User::create([
+            'name' => $data['name'], 'email' => $data['email'], 'password' => $password
+        ]);
+        return $user;
+    }
 }
