@@ -2,7 +2,6 @@
     <div>
         <div class="row">
             <div class="col-md-12">
-                <h2>Комментарии</h2>
                 <div class="comment_form">
                     <form @submit.prevent="createComment()">
                         <div class="form-group">

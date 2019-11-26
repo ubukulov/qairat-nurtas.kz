@@ -1724,7 +1724,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -37076,8 +37075,6 @@ var render = function() {
   return _c("div", [
     _c("div", { staticClass: "row" }, [
       _c("div", { staticClass: "col-md-12" }, [
-        _c("h2", [_vm._v("Комментарии")]),
-        _vm._v(" "),
         _c("div", { staticClass: "comment_form" }, [
           _c(
             "form",

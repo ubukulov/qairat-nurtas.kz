@@ -23,6 +23,12 @@
             <span>Список страницы</span>
         </a>
     </li>
+    <li>
+        <a href="{{ route('admin.comment.index') }}">
+            <i class="fas fa-comments"></i>
+            <span>Список комментарии</span>
+        </a>
+    </li>
 
     {{--<li>
         <a href="pages/widgets.html">

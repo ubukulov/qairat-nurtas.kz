@@ -26,4 +26,9 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => ['web
     Route::get('/page/{id}/edit', 'PageController@edit')->name('admin.page.edit');
     Route::post('/page/store', 'PageController@store')->name('admin.page.store');
     Route::post('/page/{id}/update', 'PageController@update')->name('admin.page.update');
+
+    # Comments
+    Route::get('/comments', 'CommentController@index')->name('admin.comment.index');
+    Route::get('/comment/{id}/active', 'CommentController@active')->name('admin.comment.active');
+    Route::get('/comment/{id}/noactive', 'CommentController@noActive')->name('admin.comment.noactive');
 });

@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Comment extends Model
 {
     protected $fillable = [
-        'type', 'parent_id', 'user_id', 'pcp_id', 'comment'
+        'type', 'parent_id', 'user_id', 'pcp_id', 'comment', 'status'
     ];
 
     protected $dates = [
@@ -29,7 +29,7 @@ class Comment extends Model
      */
     public static function getComments($type, $pcpId)
     {
-        $comments = Comment::where(['type' => $type, 'pcp_id' => $pcpId])->orderBy('id', 'DESC')->get();
+        $comments = Comment::where(['type' => $type, 'pcp_id' => $pcpId, 'status' => '1'])->orderBy('id', 'DESC')->get();
         return $comments;
     }
 

@@ -70,6 +70,26 @@
             </div>
             @endforeach
         </div>
+
+        <div class="col-md-12">
+            <comment type="post" :pcp-id="{{ $post->id }}"></comment>
+
+            <h2>Комментарии</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    @foreach ($post->comments() as $item)
+                        <div class="comment mb-2">
+                            <div>
+                                <i class="fas fa-user-circle"></i>&nbsp; {{ $item->first_name }}
+                            </div>
+                            <div>
+                                {{ $item->comment }}
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
+            </div>
+        </div>
     </div>
 @stop
 <style>

@@ -61,6 +61,7 @@
 
     <comment type="clip" :pcp-id="{{ $clip->id }}"></comment>
 
+    <h2>Комментарии</h2>
     <div class="row">
         <div class="col-md-12">
             @foreach ($clip->comments() as $item)

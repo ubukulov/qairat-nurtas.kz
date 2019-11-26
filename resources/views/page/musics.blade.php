@@ -495,7 +495,6 @@
 
                         NOTE: These are for handling things outside of the scope of AmplitudeJS
                     -->
-                    <script type="text/javascript" src="{{ asset('js/functions.js') }}"></script>
                 </div>
             </div>
         </div>
