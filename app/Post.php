@@ -54,7 +54,7 @@ class Post extends Model
 
     public function comments()
     {
-        $comments = Comment::where(['comments.type' => 'clip', 'comments.pcp_id' => $this->id, 'comments.status' => '1'])
+        $comments = Comment::where(['comments.type' => 'post', 'comments.pcp_id' => $this->id, 'comments.status' => '1'])
                     ->select('comments.*', 'users.name as first_name')
                     ->join('users', 'users.id', '=', 'comments.user_id')
                     ->orderBy('id', 'DESC')
