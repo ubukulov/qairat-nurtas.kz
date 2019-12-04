@@ -19,7 +19,7 @@
                                 <a href="{{ route('post.show', ['alias' => $post->alias, 'id' => $post->id]) }}">{{ $post->title }}</a>
                             </div>
                             <div class="news_desc">
-                                <p>{!! $post->description !!}</p>
+                                {!! $post->description !!}
                             </div>
                             <div class="read_more">
                                 <a href="{{ route('post.show', ['alias' => $post->alias, 'id' => $post->id]) }}">Подробнее</a>

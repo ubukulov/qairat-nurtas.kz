@@ -6,7 +6,7 @@
             <div class="page_content">
                 <div class="page_title">
                     @if($agent->isMobile())
-                    <h2>{!! $page->title !!}</h2>
+                    <h1>{!! $page->title !!}</h1>
                     @else
                     <h1>{!! $page->title !!}</h1>
                     @endif

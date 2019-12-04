@@ -6,7 +6,7 @@
             <div class="post_content">
                 <div class="post_title">
                     @if($agent->isMobile())
-                        <h4>{{ $post->title }}</h4>
+                        <h1>{{ $post->title }}</h1>
                     @else
                         <h1>{{ $post->title }}</h1>
                     @endif
