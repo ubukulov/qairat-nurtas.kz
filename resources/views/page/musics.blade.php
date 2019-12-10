@@ -17,7 +17,7 @@
 
                             <!-- Left Side Player -->
                             <div id="amplitude-left">
-                                <img data-amplitude-song-info="cover_art_url"/>
+                                <img data-amplitude-song-info="cover_art_url" style="max-width: 100%;"/>
                                 <div id="player-left-bottom">
                                     <div id="time-container">
 							<span class="current-time">

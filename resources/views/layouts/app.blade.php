@@ -22,6 +22,7 @@
     <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/media.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/play.css') }}">
 
     <!-- Include Style Sheet -->
     <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}"/>

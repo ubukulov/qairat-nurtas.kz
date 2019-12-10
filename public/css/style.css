@@ -19,6 +19,13 @@
   font-style: normal;
 }
 @font-face {
+  font-family: 'pg_isadoracyrpro-regular-webfont';
+  src: url('../fonts/pg_isadoracyrpro-regular-webfont.eot');
+  src: url('../fonts/pg_isadoracyrpro-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/pg_isadoracyrpro-regular-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: 'Alegreya Sans';
   font-style: normal;
   font-weight: 400;
@@ -42,6 +49,14 @@ body {
 .bandcamp-grey,
 .bandcamp-white {
   width: 24px;
+}
+h1,
+h2 {
+  font-family: 'pg_isadoracyrpro-regular-webfont', sans-serif;
+  font-weight: bold;
+}
+.nav-item a {
+  font-size: 20px;
 }
 #header .header {
   background: url("../img/header_bg.jpg") center center no-repeat;
