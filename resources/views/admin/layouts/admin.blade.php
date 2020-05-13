@@ -613,6 +613,7 @@
         // CKEDITOR.config.allowedContent = true;
         CKEDITOR.config.disallowedContent = 'span{style}';
         CKEDITOR.config.allowedContent = 'iframe[*]';
+        CKEDITOR.config.allowedContent = 'img[*]';
     })
 </script>
 </body>
