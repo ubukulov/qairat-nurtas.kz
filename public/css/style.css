@@ -37,7 +37,8 @@ body {
   padding: 0px;
   margin: 0px;
   overflow-x: hidden;
-  background: url('../img/background_bg.jpg') !important;
+  background: url('../img/body_bg2.png') !important;
+  background-size: cover;
 }
 #wrap {
   width: 1000px;
@@ -68,7 +69,7 @@ h2 {
 }
 #content {
   width: 100%;
-  padding: 10px 0px;
+  background: #fff;
 }
 .news_q {
   width: 100%;
@@ -133,6 +134,7 @@ h2 {
 }
 .post_content .post_desc {
   text-align: left;
+  font-size: 18px;
 }
 .post_content .post_desc img {
   max-width: 100%;
@@ -178,7 +180,7 @@ h2 {
 }
 .read_more a {
   font-size: 14px;
-  color: #000;
+  text-decoration: underline;
 }
 .read_more a:hover {
   border-bottom: 1px solid;
@@ -188,3 +190,10 @@ h2 {
   width: 100% !important;
   height: 550px !important;
 }
+.breadcrumb {
+  background: none !important;
+}
+.page_desc {
+  font-size: 18px;
+}
+/*# sourceMappingURL=style.css.map */

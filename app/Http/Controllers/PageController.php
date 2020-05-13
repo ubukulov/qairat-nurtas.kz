@@ -16,8 +16,9 @@ class PageController extends BaseController
             $this->seo()->setDescription('биография кайрата нуртаса');
             $this->seo()->addImages(url('/img/album-art/kajrat_nurtas.jpg'));
             $this->seo()->setCanonical($page->url());
+            $comments = $page->comments();
 
-            return view('page.show', compact('page'));
+            return view('page.show', compact('page', 'comments'));
 
         } elseif($alias == 'qairat-nurtas-musics') {
             $this->seo()->setTitle('Песни Кайрата Нуртаса');
@@ -28,7 +29,7 @@ class PageController extends BaseController
             return view('page.musics');
 
         } elseif($alias == 'kajrat-nurtas-klipy') {
-            $clips = Clip::orderBy('id', 'DESC')->get();
+            $clips = Clip::orderBy('id', 'DESC')->paginate(9);
             $this->seo()->setTitle('Клипы Кайрата Нуртаса');
             $this->seo()->setDescription('На сайте вы можете посмотреть клипы кайрата нуртаса');
             $this->seo()->addImages(url('/img/album-art/kajrat_nurtas.jpg'));

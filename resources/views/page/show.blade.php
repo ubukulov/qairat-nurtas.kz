@@ -21,21 +21,19 @@
         <div class="col-md-12">
             <comment type="page" :pcp-id="{{ $page->id }}"></comment>
 
+            @if(count($comments) > 0)
             <h2>Комментарии</h2>
-            <div class="row">
-                <div class="col-md-12">
-                    @foreach ($page->comments() as $item)
-                        <div class="comment mb-2">
-                            <div>
-                                <i class="fas fa-user-circle"></i>&nbsp; {{ $item->first_name }}
-                            </div>
-                            <div>
-                                {{ $item->comment }}
-                            </div>
-                        </div>
-                    @endforeach
+            @foreach ($comments as $item)
+                <div class="comment mb-2">
+                    <div>
+                        <i class="fas fa-user-circle"></i>&nbsp; {{ $item->first_name }}
+                    </div>
+                    <div>
+                        {{ $item->comment }}
+                    </div>
                 </div>
-            </div>
+            @endforeach
+            @endif
         </div>
     </div>
 @stop

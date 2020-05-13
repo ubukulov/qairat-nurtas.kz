@@ -13,3 +13,4 @@ yarn-error.log
 /public/files/
 /public/sitemap.xml
 /public/uploads
+/public/.htaccess

@@ -36,7 +36,8 @@ html,body {
   padding: 0px;
   margin: 0px;
   overflow-x: hidden;
-  background: url('../img/background_bg.jpg') !important;
+  background: url('../img/body_bg2.png') !important;
+    background-size: cover;
 }
 #wrap {
   width: 1000px;
@@ -70,7 +71,7 @@ h1, h2 {
 }
 #content {
   width: 100%;
-  padding: 10px 0px;
+    background: #fff;
 }
 .news_q {
   width: 100%;
@@ -140,6 +141,7 @@ h1, h2 {
   }
   .post_desc {
     text-align: left;
+      font-size: 18px;
 
     img {
       max-width: 100%;
@@ -189,7 +191,7 @@ h1, h2 {
 
   a {
     font-size: 14px;
-    color: #000;
+      text-decoration: underline;
 
     &:hover {
       border-bottom: 1px solid;
@@ -202,4 +204,10 @@ h1, h2 {
         width: 100% !important;
         height: 550px !important;
     }
+}
+.breadcrumb {
+    background: none !important;
+}
+.page_desc {
+    font-size: 18px;
 }

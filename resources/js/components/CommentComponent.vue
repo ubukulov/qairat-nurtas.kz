@@ -1,24 +1,21 @@
 <template>
     <div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="comment_form">
-                    <form @submit.prevent="createComment()">
-                        <div class="form-group">
-                            <input type="text" class="form-control" v-model="email_or_phone" required placeholder="Email / Телефон">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" v-model="name" required placeholder="Ваше имя">
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control" v-model="comment" cols="30" required rows="4" placeholder="Ваши комментарии"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" class="btn btn-primary">Комментировать</button>
-                        </div>
-                    </form>
+        <div class="comment_form">
+            <h4>Оставьте комментарий</h4>
+            <form @submit.prevent="createComment()">
+                <div class="form-group">
+                    <input type="text" class="form-control" v-model="email_or_phone" required placeholder="Email / Телефон">
                 </div>
-            </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" v-model="name" required placeholder="Ваше имя">
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" v-model="comment" cols="30" required rows="4" placeholder="Ваши комментарии"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Комментировать</button>
+                </div>
+            </form>
         </div>
     </div>
 </template>

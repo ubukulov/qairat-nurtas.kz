@@ -1721,9 +1721,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -37073,110 +37070,104 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col-md-12" }, [
-        _c("div", { staticClass: "comment_form" }, [
-          _c(
-            "form",
-            {
+    _c("div", { staticClass: "comment_form" }, [
+      _c("h4", [_vm._v("Оставьте комментарий")]),
+      _vm._v(" "),
+      _c(
+        "form",
+        {
+          on: {
+            submit: function($event) {
+              $event.preventDefault()
+              return _vm.createComment()
+            }
+          }
+        },
+        [
+          _c("div", { staticClass: "form-group" }, [
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.email_or_phone,
+                  expression: "email_or_phone"
+                }
+              ],
+              staticClass: "form-control",
+              attrs: {
+                type: "text",
+                required: "",
+                placeholder: "Email / Телефон"
+              },
+              domProps: { value: _vm.email_or_phone },
               on: {
-                submit: function($event) {
-                  $event.preventDefault()
-                  return _vm.createComment()
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.email_or_phone = $event.target.value
                 }
               }
-            },
-            [
-              _c("div", { staticClass: "form-group" }, [
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.email_or_phone,
-                      expression: "email_or_phone"
-                    }
-                  ],
-                  staticClass: "form-control",
-                  attrs: {
-                    type: "text",
-                    required: "",
-                    placeholder: "Email / Телефон"
-                  },
-                  domProps: { value: _vm.email_or_phone },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
-                      }
-                      _vm.email_or_phone = $event.target.value
-                    }
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "form-group" }, [
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.name,
+                  expression: "name"
+                }
+              ],
+              staticClass: "form-control",
+              attrs: { type: "text", required: "", placeholder: "Ваше имя" },
+              domProps: { value: _vm.name },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
                   }
-                })
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "form-group" }, [
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.name,
-                      expression: "name"
-                    }
-                  ],
-                  staticClass: "form-control",
-                  attrs: {
-                    type: "text",
-                    required: "",
-                    placeholder: "Ваше имя"
-                  },
-                  domProps: { value: _vm.name },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
-                      }
-                      _vm.name = $event.target.value
-                    }
+                  _vm.name = $event.target.value
+                }
+              }
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "form-group" }, [
+            _c("textarea", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.comment,
+                  expression: "comment"
+                }
+              ],
+              staticClass: "form-control",
+              attrs: {
+                cols: "30",
+                required: "",
+                rows: "4",
+                placeholder: "Ваши комментарии"
+              },
+              domProps: { value: _vm.comment },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
                   }
-                })
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "form-group" }, [
-                _c("textarea", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.comment,
-                      expression: "comment"
-                    }
-                  ],
-                  staticClass: "form-control",
-                  attrs: {
-                    cols: "30",
-                    required: "",
-                    rows: "4",
-                    placeholder: "Ваши комментарии"
-                  },
-                  domProps: { value: _vm.comment },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
-                      }
-                      _vm.comment = $event.target.value
-                    }
-                  }
-                })
-              ]),
-              _vm._v(" "),
-              _vm._m(0)
-            ]
-          )
-        ])
-      ])
+                  _vm.comment = $event.target.value
+                }
+              }
+            })
+          ]),
+          _vm._v(" "),
+          _vm._m(0)
+        ]
+      )
     ])
   ])
 }
@@ -49372,7 +49363,18 @@ Vue.component('comment', __webpack_require__(/*! ./components/CommentComponent.v
  */
 
 var app = new Vue({
-  el: '#wrap'
+  el: '#wrap',
+  methods: {
+    showContent: function showContent() {
+      $('button[class="navbar-toggler"]').click(function () {
+        if ($('#navbarSupportedContent').hasClass('show')) {
+          $('#navbarSupportedContent').removeClass('show');
+        } else {
+          $('#navbarSupportedContent').addClass('show');
+        }
+      });
+    }
+  }
 });
 
 /***/ }),
@@ -49522,8 +49524,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\xampp\htdocs\qairat-nurtas.loc\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\qairat-nurtas.loc\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\xampp\htdocs\qairat.loc\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\qairat.loc\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

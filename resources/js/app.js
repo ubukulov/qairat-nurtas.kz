@@ -32,4 +32,15 @@ Vue.component('comment', require('./components/CommentComponent.vue').default);
 
 const app = new Vue({
     el: '#wrap',
+    methods: {
+        showContent(){
+            $('button[class="navbar-toggler"]').click(function(){
+                if($('#navbarSupportedContent').hasClass('show')) {
+                    $('#navbarSupportedContent').removeClass('show');
+                } else {
+                    $('#navbarSupportedContent').addClass('show');
+                }
+            });
+        }
+    }
 });

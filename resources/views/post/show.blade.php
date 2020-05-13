@@ -74,10 +74,11 @@
         <div class="col-md-12">
             <comment type="post" :pcp-id="{{ $post->id }}"></comment>
 
+            @if(count($comments) > 0)
             <h2>Комментарии</h2>
             <div class="row">
                 <div class="col-md-12">
-                    @foreach ($post->comments() as $item)
+                    @foreach ($comments as $item)
                         <div class="comment mb-2">
                             <div>
                                 <i class="fas fa-user-circle"></i>&nbsp; {{ $item->first_name }}
@@ -89,6 +90,7 @@
                     @endforeach
                 </div>
             </div>
+            @endif
         </div>
     </div>
 @stop

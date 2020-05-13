@@ -20,6 +20,7 @@ class PostController extends BaseController
         $this->seo()->opengraph()->setUrl($post->url());
         $this->seo()->opengraph()->addProperty('image:size', 300);
         $this->seo()->setCanonical($post->url());
-        return view('post.show', compact('post'));
+        $comments = $post->comments();
+        return view('post.show', compact('post', 'comments'));
     }
 }
