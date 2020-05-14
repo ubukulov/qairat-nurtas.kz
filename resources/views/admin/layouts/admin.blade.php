@@ -610,10 +610,9 @@
         // instance, using default configuration.
         CKEDITOR.replace('description');
         CKEDITOR.replace('full_description');
-        // CKEDITOR.config.allowedContent = true;
+        CKEDITOR.config.allowedContent = true;
         CKEDITOR.config.disallowedContent = 'span{style}';
-        CKEDITOR.config.allowedContent = 'iframe[*]';
-        CKEDITOR.config.allowedContent = 'img[*]';
+        //CKEDITOR.config.allowedContent = 'iframe[*];img[*],a';
     })
 </script>
 </body>
